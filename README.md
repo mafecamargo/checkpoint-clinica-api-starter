@@ -1,7 +1,7 @@
 # Clínica API — Checkpoint 04
 
 ## Video Demonstrativo
-
+https://youtu.be/U9bJg7ot5n8 
 
 ## Requisitos
 - Java 21
