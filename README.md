@@ -1,5 +1,8 @@
 # Clínica API — Checkpoint 04
 
+## Video Demonstrativo
+
+
 ## Requisitos
 - Java 21
 - Maven 3.9+
