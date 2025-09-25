@@ -1,34 +1,50 @@
-# Clínica API — Spring Boot (SOA — Prof. Salatiel Luz Marinho)
+# Clínica API — Checkpoint 04
 
 ## Requisitos
 - Java 21
 - Maven 3.9+
 - Docker (para rodar testes com Testcontainers) e PostgreSQL local (para desenvolvimento)
 
-## Como rodar
-```bash
-mvn spring-boot:run
-# Swagger UI:
-# http://localhost:8080/swagger-ui.html
-```
+## Endpoints 
 
-## Banco de Desenvolvimento
-A aplicação espera um Postgres local:
-- URL: `jdbc:postgresql://localhost:5432/clinica`
-- user: `clinica`
-- password: `secret`
+| Recurso        | Endpoint            | Método | 
 
-Use o script do Flyway (automaticamente aplicado) em `src/main/resources/db/migration/V1__init.sql`.
+|----------------|---------------------|--------|
 
-## Endpoints iniciais
-- `POST /pacientes` — cria paciente (201)
-- `GET  /pacientes` — lista paginada
+| Criar paciente  | `/pacientes`          | POST   | 
 
-## Atividade dos estudantes
-Implemente o CRUD de **Médico** com validações e documentação OpenAPI.
+| Listar pacientes | `/jogador`        | GET    |
 
-## Testes de Integração
-```bash
-mvn -q -DskipTests=false test
-```
-Os testes utilizam **Testcontainers** com uma instância PostgreSQL efêmera.
+| Buscar paciente por ID | `/pacientes/{id}` | GET |
+
+| Atualizar paciente | `/pacientes/{id}`   | PUT    |
+
+| Deletar paciente  | `/pacientes/{id}`    | DELETE |
+
+| Criar medico  | `/medico`          | POST   | 
+
+| Listar medicos | `/medico`        | GET    |
+
+| Buscar medico por ID | `/medico/{id}` | GET |
+
+| Atualizar medico | `/medico/{id}`   | PUT    |
+
+| Deletar medico  | `/medico/{id}`    | DELETE |
+
+| Cria Consulta  | `/consulta`    | POST |
+
+
+
+## Alterações Realizadas
+
+- Inclusão Controller de Médico e Consulta
+
+- Coreção DTO´s
+
+- Correçao camada repository
+
+
+
+# Aluno
+
+- RM97956 - Maria Fernanda Vieira de Camargo
